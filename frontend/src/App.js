@@ -9,7 +9,7 @@ const App = () => {
     <div>
       {user === null ?
         <LoginForm /> :
-        console.log('')
+        <h1>Loading...</h1>
       }
     </div>
   );
