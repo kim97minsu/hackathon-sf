@@ -1,34 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import LoginForm from './components/LoginForm'
 import Home from './components/Home';
-import tt from '@tomtom-international/web-sdk-maps';
+import TomTomMap from './components/TomTomMap'
+
 
 const App = () => {
   const [user, setUser] = useState(null)
+  const [ showMap, setShowMap ] = useState(false)
 
-  useEffect(() => {
-     const script = document.createElement('script');
-     script.src = '../node_modules/@tomtom-international/web-sdk-maps/dist/maps-web.min.js';
-
-     document.body.appendChild(script);
-     script.async = true;
-     script.onload = function () {
-       tt.map({
-         key: 'AUrYekaUCt8px4UOktVSK2mcGzAypg81',
-         style: 'tomtom://vector/1/basic-main',
-         container: 'map',
-       });
-     }
-
-  }, [])
-
+  const displayMap = () => setShowMap(!showMap)
+  
   return (
     <div>
       {user === null ?
         <Home /> :
         console.log('')
       }
-    <div id='map'></div>
+      <button onClick={displayMap}>show the map</button>
+      {showMap ?
+        <TomTomMap />
+        :
+        null
+      }
     </div>
   );
 }
