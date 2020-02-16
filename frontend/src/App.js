@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import LoginForm from './components/LoginForm'
+import Home from './components/Home';
 import tt from '@tomtom-international/web-sdk-maps';
-
-
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -26,7 +25,7 @@ const App = () => {
   return (
     <div>
       {user === null ?
-        <LoginForm /> :
+        <Home /> :
         console.log('')
       }
     <div id='map'></div>
