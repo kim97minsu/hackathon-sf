@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import salad from '../image/salad.jpg';
 // import { NavLink } from 'react-router-dom';
 import '../available.css'
+import vector from '../image/Vector.png';
 
 class Available extends Component {
   render() {
@@ -18,6 +19,10 @@ class Available extends Component {
           <p id="chef">Chef Salad</p>
           <p id="russian">Russian Salad</p>
           <p id="moo">Moo Salad</p>
+        </div>
+        <div>
+          <span className="line"></span>
+          <img src={vector} alt="" className="vector" />
         </div>
       </div>
     );

@@ -17,6 +17,7 @@ code {
   width: 375px;
   height: 182px;
   box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.15);
+   z-index: 1;
 }
 h1 {
   position: absolute;
@@ -146,4 +147,20 @@ h1 {
   display: flex;
   align-items: center;
   color: #4F4F4F;
+}
+.line {
+  position: absolute;
+  width: 356px;
+  height: 0px;
+  left: 19px;
+  top: 436px;
+  border: 0.5px solid #BDBDBD;
+}
+.vector {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0.04%;
+  bottom: 0.03%;
+  background: rgba(0, 0, 0, 0.54);
 }

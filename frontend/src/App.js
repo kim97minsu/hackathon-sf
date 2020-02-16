@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import LoginForm from './components/LoginForm'
 import Home from './components/Home';
 import TomTomMap from './components/TomTomMap';
+import Available from './components/Available'
 import {BrowserRouter, Link, Route} from 'react-router-dom';
 
 
@@ -16,8 +17,13 @@ const App = () => {
       <BrowserRouter>
         <Route exact path='/' component={Home}/>
         <Route path='/login' component={LoginForm}/>
+        <Route path='/available' component={Available}/>
+        <div className="available">
+          <Link to="/available">Click me</Link>
+        </div>
       </BrowserRouter>
       <button onClick={displayMap}>show the map</button>
+
       {showMap ?
         <TomTomMap />
         :
