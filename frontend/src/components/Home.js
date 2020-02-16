@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div className="home">
         <h1 className="fuud">FUUD</h1>
-        <h3 className="subheading">Local food at Low Prices.</h3>
+        <h3 className="subheading">Local Food at Low Prices.</h3>
         <button className="loginButton">Login</button>
         <br />
         <button className="signupButton">Signup</button>
