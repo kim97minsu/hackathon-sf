@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <div className="home">
         <img className='watermelon' src={Watermelon}/>
-        <h1 className="fuud">FUUD</h1>
+        <h1 className="fuud">FÜÜD</h1>
         <h3 className="subheading">Local Leftover Food at Low Prices.</h3>
         <Link to='/login'>
           <button className="loginButton">Login</button>
