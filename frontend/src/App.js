@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import LoginForm from './components/LoginForm'
 import Home from './components/Home';
-import TomTomMap from './components/TomTomMap'
+import TomTomMap from './components/TomTomMap';
+import {BrowserRouter, Link, Route} from 'react-router-dom';
 
 
 const App = () => {
@@ -12,10 +13,10 @@ const App = () => {
   
   return (
     <div>
-      {user === null ?
-        <Home /> :
-        console.log('')
-      }
+      <BrowserRouter>
+        <Route exact path='/' component={Home}/>
+        <Route path='/login' component={LoginForm}/>
+      </BrowserRouter>
       <button onClick={displayMap}>show the map</button>
       {showMap ?
         <TomTomMap />

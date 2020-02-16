@@ -9,7 +9,9 @@ class Home extends Component {
         <img className='watermelon' src={Watermelon}/>
         <h1 className="fuud">FUUD</h1>
         <h3 className="subheading">Local Leftover Food at Low Prices.</h3>
-        <button className="loginButton">Login</button>
+        <Link to='/login'>
+          <button className="loginButton">Login</button>
+        </Link>
         <br />
         <button className="signupButton">Signup</button>
       </div>
