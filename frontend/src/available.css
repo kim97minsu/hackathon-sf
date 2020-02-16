@@ -19,8 +19,8 @@ code {
   box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.15);
    z-index: 1;
 }
-h1 {
-  position: absolute;
+.available-h1 {
+  /* position: absolute; */
   left: 5.07%;
   right: 53.87%;
   top: 23.89%;
