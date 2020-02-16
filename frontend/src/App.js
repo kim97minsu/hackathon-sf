@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import LoginForm from './components/LoginForm'
+import LoginForm from './components/LoginForm';
+import Home from './components/Home';
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -8,7 +9,7 @@ const App = () => {
   return (
     <div>
       {user === null ?
-        <LoginForm /> :
+        <Home /> :
         console.log('')
       }
     </div>
