@@ -7,15 +7,21 @@
 
 .home {
   text-align: center;
-  margin-top: 14.8125rem;
+  margin-top: 11rem;
 
+}
+
+.watermelon {
+  height: 40%;
+  width: 35%;
+  margin-bottom: -2.75rem;
 }
 
 .fuud {
   font-size: 5rem;
   font-family: 'Red Hat Display', sans-serif;
   color: #6540F5;
-  margin-bottom: -3%;
+  margin-bottom: -0.75rem;
   font-weight: 100;
 }
 
@@ -23,6 +29,7 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  margin-bottom: -0.5rem;
 }
 
 .loginButton {

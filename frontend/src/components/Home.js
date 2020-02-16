@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import Watermelon from './images/watermelon.png';
 import { Link } from 'react-router-dom';
 
 class Home extends Component {
   render() {
     return (
       <div className="home">
+        <img className='watermelon' src={Watermelon}/>
         <h1 className="fuud">FUUD</h1>
-        <h3 className="subheading">Local Food at Low Prices.</h3>
+        <h3 className="subheading">Local Leftover Food at Low Prices.</h3>
         <button className="loginButton">Login</button>
         <br />
         <button className="signupButton">Signup</button>
@@ -15,4 +17,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Home;
