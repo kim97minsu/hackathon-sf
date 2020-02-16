@@ -3,6 +3,7 @@ import LoginForm from './components/LoginForm'
 import Home from './components/Home';
 import TomTomMap from './components/TomTomMap';
 import {BrowserRouter, Link, Route} from 'react-router-dom';
+import OrderComplete from './OrderComplete';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <BrowserRouter>
         <Route exact path='/' component={Home}/>
         <Route path='/login' component={LoginForm}/>
+        <Route path='/ordercompleted' component={OrderComplete} />
       </BrowserRouter>
       <button onClick={displayMap}>show the map</button>
       {showMap ?
