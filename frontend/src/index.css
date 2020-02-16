@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.fuud {
+  font-size: 80px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
