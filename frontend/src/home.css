@@ -83,3 +83,8 @@ code {
   width: 100vw;
   height: 100vh;
 }
+
+.available {
+  position: relative;
+  top: 100px;
+}
