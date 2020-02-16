@@ -14,9 +14,10 @@ class Home extends Component {
         </Link>
         <br />
         <button className="signupButton">Signup</button>
+
       </div>
     )
   }
 }
 
-export default Home;
+export default Home
