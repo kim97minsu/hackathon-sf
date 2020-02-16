@@ -4,6 +4,7 @@ import Home from './components/Home';
 import TomTomMap from './components/TomTomMap';
 import Available from './components/Available'
 import {BrowserRouter, Link, Route} from 'react-router-dom';
+import OrderComplete from './OrderComplete';
 
 
 const App = () => {
@@ -21,6 +22,8 @@ const App = () => {
         <div className="available">
           <Link to="/available">Click me</Link>
         </div>
+        <Route path='/ordercompleted' component={OrderComplete} />
+
       </BrowserRouter>
       <button onClick={displayMap}>show the map</button>
 
@@ -29,6 +32,7 @@ const App = () => {
         :
         null
       }
+
     </div>
   );
 }
